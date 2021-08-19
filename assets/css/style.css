@@ -1,118 +1,134 @@
-/*
+/*!
+  Theme: GitHub Dark
+  Description: Dark theme as seen on github.com
+  Author: github.com
+  Maintainer: @Hirse
+  Updated: 2021-05-15
 
-Gruvbox style (dark) (c) Pavel Pertsev (original style at https://github.com/morhetz/gruvbox)
-
+  Outdated base version: https://github.com/primer/github-syntax-dark
+  Current colors taken from GitHub's CSS
 */
 
 .hljs {
-	display: block;
-	overflow-x: auto;
-	padding: 0.5em;
-	background: #282828;
-  }
-  
-  .hljs,
-  .hljs-subst {
-	color: #ebdbb2;
-  }
-  
-  /* Gruvbox Red */
-  .hljs-deletion,
-  .hljs-formula,
-  .hljs-keyword,
-  .hljs-link,
-  .hljs-selector-tag {
-	color: #fb4934;
-  }
-  
-  /* Gruvbox Blue */
-  .hljs-built_in,
-  .hljs-emphasis,
-  .hljs-name,
-  .hljs-quote,
-  .hljs-strong,
-  .hljs-title,
-  .hljs-variable {
-	color: #83a598;
-  }
-  
-  /* Gruvbox Yellow */
-  .hljs-attr,
-  .hljs-params,
-  .hljs-template-tag,
-  .hljs-type {
-	color: #fabd2f;
-  }
-  
-  /* Gruvbox Purple */
-  .hljs-builtin-name,
-  .hljs-doctag,
-  .hljs-literal,
-  .hljs-number {
-	color: #8f3f71;
-  }
-  
-  /* Gruvbox Orange */
-  .hljs-code,
-  .hljs-meta,
-  .hljs-regexp,
-  .hljs-selector-id,
-  .hljs-template-variable {
-	color: #fe8019;
-  }
-  
-  /* Gruvbox Green */
-  .hljs-addition,
-  .hljs-meta-string,
-  .hljs-section,
-  .hljs-selector-attr,
-  .hljs-selector-class,
-  .hljs-string,
-  .hljs-symbol {
-	color: #b8bb26;
-  }
-  
-  /* Gruvbox Aqua */
-  .hljs-attribute,
-  .hljs-bullet,
-  .hljs-class,
-  .hljs-function,
-  .hljs-function .hljs-keyword,
-  .hljs-meta-keyword,
-  .hljs-selector-pseudo,
-  .hljs-tag {
-	color: #8ec07c;
-  }
-  
-  /* Gruvbox Gray */
-  .hljs-comment {
-	color: #928374;
-  }
-  
-  /* Gruvbox Purple */
-  .hljs-link_label,
-  .hljs-literal,
-  .hljs-number {
-	color: #d3869b;
-  }
-  
-  .hljs-comment,
-  .hljs-emphasis {
-	font-style: italic;
-  }
-  
-  .hljs-section,
-  .hljs-strong,
-  .hljs-tag {
+	color: #c9d1d9;
+	background: #0d1117;
+}
+
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable.language_ {
+	/* prettylights-syntax-keyword */
+	color: #ff7b72;
+}
+
+.hljs-title,
+.hljs-title.class_,
+.hljs-title.class_.inherited__,
+.hljs-title.function_ {
+	/* prettylights-syntax-entity */
+	color: #d2a8ff;
+}
+
+.hljs-attr,
+.hljs-attribute,
+.hljs-literal,
+.hljs-meta,
+.hljs-number,
+.hljs-operator,
+.hljs-variable,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-id {
+	/* prettylights-syntax-constant */
+	color: #79c0ff;
+}
+
+.hljs-regexp,
+.hljs-string,
+.hljs-meta .hljs-string {
+	/* prettylights-syntax-string */
+	color: #a5d6ff;
+}
+
+.hljs-built_in,
+.hljs-symbol {
+	/* prettylights-syntax-variable */
+	color: #ffa657;
+}
+
+.hljs-comment,
+.hljs-code,
+.hljs-formula {
+	/* prettylights-syntax-comment */
+	color: #8b949e;
+}
+
+.hljs-name,
+.hljs-quote,
+.hljs-selector-tag,
+.hljs-selector-pseudo {
+	/* prettylights-syntax-entity-tag */
+	color: #7ee787;
+}
+
+.hljs-subst {
+	/* prettylights-syntax-storage-modifier-import */
+	color: #c9d1d9;
+}
+
+.hljs-section {
+	/* prettylights-syntax-markup-heading */
+	color: #1f6feb;
 	font-weight: bold;
-  }
-  
+}
+
+.hljs-bullet {
+	/* prettylights-syntax-markup-list */
+	color: #f2cc60;
+}
+
+.hljs-emphasis {
+	/* prettylights-syntax-markup-italic */
+	color: #c9d1d9;
+	font-style: italic;
+}
+
+.hljs-strong {
+	/* prettylights-syntax-markup-bold */
+	color: #c9d1d9;
+	font-weight: bold;
+}
+
+.hljs-addition {
+	/* prettylights-syntax-markup-inserted */
+	color: #aff5b4;
+	background-color: #033a16;
+}
+
+.hljs-deletion {
+	/* prettylights-syntax-markup-deleted */
+	color: #ffdcd7;
+	background-color: #67060c;
+}
+
+.hljs-char.escape_,
+.hljs-link,
+.hljs-params,
+.hljs-property,
+.hljs-punctuation,
+.hljs-tag {
+	/* purposely ignored */
+}
 
 /* Custom styles by Sridhar */
 
 .wp-block-code code,
 .entry-content code {
-	background-color: rgba(27,31,35,0.05);
+	background-color: rgba(27, 31, 35, 0.05);
 	font-size: 85%;
 	font-family: 'Source Code Pro', monospace;
 }
@@ -144,8 +160,14 @@ pre .btn {
 	vertical-align: middle;
 	cursor: pointer;
 	background-color: #eee;
-	background-image: -webkit-gradient(linear,left top, left bottom,from(#fcfcfc),to(#eee));
-	background-image: linear-gradient(#fcfcfc,#eee);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#fcfcfc),
+		to(#eee)
+	);
+	background-image: linear-gradient(#fcfcfc, #eee);
 	border: 1px solid #d5d5d5;
 	border-radius: 3px;
 	-webkit-user-select: none;
@@ -162,24 +184,31 @@ pre .btn {
 	-webkit-transition: opacity 0.3s ease-in-out;
 	transition: opacity 0.3s ease-in-out;
 	opacity: 0;
-	padding: 2px 6px;
+	padding: 7px;
 	position: absolute;
 	right: 4px;
 	top: 4px;
+	background: white;
 }
 
 pre:hover .btn {
 	opacity: 1;
 }
 
+.btn:hover {
+	background: rgb(211, 211, 211);
+	-webkit-transition: background 0.3s ease-in-out;
+	transition: background 0.3s ease-in-out;
+}
+
 @media screen and (max-width: 768px) {
 	pre .btn {
-		opacity:1;
+		opacity: 1;
 	}
 }
 
 .tooltipped {
-	position: relative
+	position: relative;
 }
 
 .tooltipped::after {
@@ -187,7 +216,9 @@ pre:hover .btn {
 	z-index: 1000000;
 	display: none;
 	padding: 5px 8px;
-	font: normal normal 11px/1.5 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font: normal normal 11px/1.5 Helvetica, arial, nimbussansl, liberationsans,
+		freesans, clean, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+		'Segoe UI Symbol';
 	color: #fff;
 	text-align: center;
 	text-decoration: none;
@@ -201,7 +232,7 @@ pre:hover .btn {
 	background: rgba(0, 0, 0, 0.8);
 	border-radius: 3px;
 	-webkit-font-smoothing: subpixel-antialiased;
-	opacity: 0
+	opacity: 0;
 }
 
 .tooltipped::before {
@@ -212,26 +243,26 @@ pre:hover .btn {
 	height: 0;
 	color: rgba(0, 0, 0, 0.8);
 	pointer-events: none;
-	content: "";
+	content: '';
 	border: 5px solid transparent;
-	opacity: 0
+	opacity: 0;
 }
 
 @-webkit-keyframes tooltip-appear {
 	from {
-		opacity: 0
+		opacity: 0;
 	}
 	to {
-		opacity: 1
+		opacity: 1;
 	}
 }
 
 @keyframes tooltip-appear {
 	from {
-		opacity: 0
+		opacity: 0;
 	}
 	to {
-		opacity: 1
+		opacity: 1;
 	}
 }
 
@@ -252,13 +283,13 @@ pre:hover .btn {
 	-webkit-animation-timing-function: ease-in;
 	animation-timing-function: ease-in;
 	-webkit-animation-delay: 0.4s;
-	animation-delay: 0.4s
+	animation-delay: 0.4s;
 }
 
 .tooltipped-s::after {
 	top: 100%;
 	right: 50%;
-	margin-top: 5px
+	margin-top: 5px;
 }
 
 .tooltipped-s::before {
@@ -266,10 +297,10 @@ pre:hover .btn {
 	right: 50%;
 	bottom: -5px;
 	margin-right: -5px;
-	border-bottom-color: rgba(0, 0, 0, 0.8)
+	border-bottom-color: rgba(0, 0, 0, 0.8);
 }
 
 .tooltipped-s::after {
 	-webkit-transform: translateX(50%);
-	transform: translateX(50%)
+	transform: translateX(50%);
 }
