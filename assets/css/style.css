@@ -196,9 +196,10 @@ pre:hover .btn {
 }
 
 .btn:hover {
-	background: rgb(211, 211, 211);
+	background: rgb(208, 208, 208);
 	-webkit-transition: background 0.3s ease-in-out;
 	transition: background 0.3s ease-in-out;
+	color: black;
 }
 
 @media screen and (max-width: 768px) {
