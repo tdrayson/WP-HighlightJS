@@ -3,7 +3,7 @@
 var snippets = document.querySelectorAll('pre');
 
 [].forEach.call(snippets, function (snippet) {
-	snippet.firstChild.insertAdjacentHTML('beforebegin', '<button class="btn" data-clipboard-snippet><img class="clippy" width="13" src=' + pluginData.clippyUrl + ' alt="Copy to clipboard"></button>');
+	snippet.firstChild.insertAdjacentHTML('beforebegin', '<button class="btn" data-clipboard-snippet>Copy to clipboard</button>');
 });
 
 var clipboardSnippets = new ClipboardJS('[data-clipboard-snippet]', {
